@@ -14,7 +14,7 @@ class phone_textfield extends StatelessWidget {
       child: TextField(
         keyboardType: TextInputType.phone,
         decoration: const InputDecoration(
-          labelStyle: TextStyle(color: maincolor),
+          labelStyle: TextStyle(color: maincolor, fontFamily: 'Nunito'),
           labelText: 'Phone Number',
           hintText: '',
           focusColor: maincolor,

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:water_monster_v2/Constants/color.dart';
+import '../Screens/body.dart';
 import '../Screens/profile.dart';
 
 class nav_bar extends StatelessWidget {
@@ -11,6 +12,7 @@ class nav_bar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: const Body(),
       appBar: AppBar(
         foregroundColor: Colors.white,
         backgroundColor: maincolor,
@@ -32,7 +34,7 @@ class nav_bar extends StatelessWidget {
           )
         ],
         title: SvgPicture.asset(
-          'Assets/Logo.svg',
+          'Assets/svg/Logo.svg',
           width: 40,
           height: 40,
         ),

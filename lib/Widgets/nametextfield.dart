@@ -13,7 +13,7 @@ class name_textfield extends StatelessWidget {
       width: 360,
       child: TextField(
         decoration: const InputDecoration(
-          labelStyle: TextStyle(color: maincolor),
+          labelStyle: TextStyle(color: maincolor, fontFamily: 'Nunito'),
           labelText: 'Name',
           hintText: '',
           focusColor: maincolor,

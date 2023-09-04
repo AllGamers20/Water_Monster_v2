@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:water_monster_v2/Screens/tank_settings.dart';
 
 class Tank_Details extends StatelessWidget {
   const Tank_Details({
@@ -26,7 +27,11 @@ class Tank_Details extends StatelessWidget {
                 width: 200,
               ),
               IconButton(
-                  onPressed: () => print('Settings'),
+                  onPressed: () => Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => const T_settings(),
+                        ),
+                      ),
                   icon: const Icon(
                     Icons.settings,
                     color: Colors.grey,

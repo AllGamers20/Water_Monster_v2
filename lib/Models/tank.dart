@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:water_monster_v2/Constants/color.dart';
 import 'package:water_monster_v2/Models/tank_details.dart';
 
 class Tank extends StatelessWidget {

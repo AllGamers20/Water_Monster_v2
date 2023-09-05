@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:water_monster_v2/Constants/color.dart';
-
-import 'Screens/home.dart';
+import 'package:water_monster_v2/Screens/Login.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const Home(),
+      home: const Login(),
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: maincolor),

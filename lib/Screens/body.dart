@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../Models/services.dart';
 import '../Models/tank.dart';
+import '../Widgets/add_btn.dart';
 
 class Body extends StatelessWidget {
   const Body({super.key});
@@ -17,6 +18,8 @@ class Body extends StatelessWidget {
           Services(),
           Padding(padding: EdgeInsets.all(10.0)),
           Tank(),
+          Padding(padding: EdgeInsets.all(10.0)),
+          add_btn()
         ],
       ),
     );

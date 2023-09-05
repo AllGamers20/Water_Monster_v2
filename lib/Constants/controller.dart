@@ -5,4 +5,6 @@ final TextEditingController phone_txt = new TextEditingController();
 final TextEditingController tank_name = new TextEditingController();
 final TextEditingController tank_size = new TextEditingController();
 final TextEditingController tank_height = new TextEditingController();
+final TextEditingController email_txt = new TextEditingController();
+final TextEditingController password_txt = new TextEditingController();
 

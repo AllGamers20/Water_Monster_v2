@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:water_monster_v2/Models/qr.dart';
-import 'package:water_monster_v2/Models/tank.dart';
 import '../Widgets/tankheighttextfield.dart';
 import '../Widgets/tanknametextfield.dart';
 import '../Widgets/tanksettingsave_btn.dart';

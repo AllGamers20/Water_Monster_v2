@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:water_monster_v2/Constants/color.dart';
 import '../Widgets/logout_btn.dart';
@@ -11,12 +12,12 @@ class ProfileDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
+    return Center(
       child: Padding(
-        padding: EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(8.0),
         child: Column(
           children: [
-            CircleAvatar(
+            const CircleAvatar(
               backgroundColor: maincolor,
               radius: 70,
               child: Icon(
@@ -25,23 +26,23 @@ class ProfileDetails extends StatelessWidget {
                 size: 100,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Text(
-              'Example@gmail.com',
-              style: TextStyle(
+              FirebaseAuth.instance.currentUser!.email!,
+              style: const TextStyle(
                 color: maincolor,
                 fontFamily: 'Nunito',
                 fontSize: 20,
               ),
             ),
-            Padding(padding: EdgeInsets.all(8.0)),
-            name_textfield(),
-            Padding(padding: EdgeInsets.all(8.0)),
-            phone_textfield(),
-            Padding(padding: EdgeInsets.all(10.0)),
-            Row(
+            const Padding(padding: EdgeInsets.all(8.0)),
+            const name_textfield(),
+            const Padding(padding: EdgeInsets.all(8.0)),
+            const phone_textfield(),
+            const Padding(padding: EdgeInsets.all(10.0)),
+            const Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -50,8 +51,8 @@ class ProfileDetails extends StatelessWidget {
                 language(),
               ],
             ),
-            Padding(padding: EdgeInsets.all(10.0)),
-            logout_btn()
+            const Padding(padding: EdgeInsets.all(10.0)),
+            const logout_btn()
           ],
         ),
       ),
